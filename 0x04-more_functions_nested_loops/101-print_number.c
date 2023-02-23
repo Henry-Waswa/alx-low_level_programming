@@ -1,43 +1,36 @@
 #include "main.h"
 
+
 /**
- * print_number - print any integer using putchar
- * @n: integer to be printed
+ * print_number - print an integer, without using long, arrays, or pointers
+ * @n: number to be printed
  */
 
 void print_number(int n)
 {
-	int count, x, y, k;
-
-	x = 0;
-	y = 1000000000;
+	unsigned int tens, digit, positive = n;
+	double t_beg = 1;
 
 	if (n == 0)
 		_putchar('0');
-	else if (n > 0)
-		n *= -1;
 	else
-	       	_putchar('-');
-	for (count = 0; count < 10; count++)
 	{
-		if (n / y == 0 && x == 0)
+		if (n < 0)
 		{
-			y /= 10;
-			
-			continue;
+			positive = n * -1;
+			_putchar('-');
 		}
-		else if (x == 0)
+
+		while (t_beg <= positive)
+			t_beg *= 10;
+		tens = t_beg / 10;
+
+		while (tens >= 1)
 		{
-			_putchar(-(n / y) + '0');
-			x += 1;
+			digit = positive / tens;
+			_putchar(digit + '0');
+			positive = (positive - (tens * digit));
+			tens /= 10;
 		}
-		else
-		{
-			k = (-(n / y) % 10);
-			if (k < 0)
-				k *= -1;
-			_putchar(k + '0');
-		}
-		y /= 10;
 	}
 }
