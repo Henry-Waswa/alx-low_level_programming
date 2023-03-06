@@ -35,7 +35,7 @@ What you should learn from this project:
 
 ### [8. Double pointer, double fun](./9-set_string.c)
 * Write a function that sets the value of a pointer to a char.
-### [9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure] (./10-crackme_password)
+### [9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure](./10-crackme_password)
 * Create a file that contains the password for the crackme2 executable.
 
 ---
