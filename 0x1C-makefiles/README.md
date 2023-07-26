@@ -1,22 +1,22 @@
-# C - Makefiles
+# 0x1C. C - Makefiles
 
-In this project, I practiced writing Makefiles.
+## Resources:books:
+Read or watch:
+* [Makefile resource 1](https://opensource.com/article/18/8/what-how-makefile)
+* [Makefile resource 2](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-## Tests :heavy_check_mark:
+---
+## Learning Objectives:bulb:
+What you should learn from this project:
 
-* [tests](./tests): Folder of test files.
+* What are make, Makefiles
+* When, why and how to use Makefiles
+* What are rules and how to set and use them
+* What are explicit and implicit rules
+* What are the most common / useful rules
+* What are variables and how to set and use them
 
-## Helper Files :raised_hands:
-
-* [school.c](./school.c): C function that displays a seahorse in text.
-Used for Makefile practice purposes throughout project.
-
-* [main.c](./main.c): Main C function that runs the function defined in
-[school.c](./school.c).
-
-## Header File :file_folder:
-
-* [m.h](./m.h): Header file defining the function prototype used in `school.c`.
+---
 
 ## Tasks :page_with_curl:
 
@@ -83,3 +83,4 @@ Used for Makefile practice purposes throughout project.
     * Does not compile if the header `m.h` is missing.
     * Works even if there are existing files of the same name as any of the
     Makefile rules in the current directory.
+
