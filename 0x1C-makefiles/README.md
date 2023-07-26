@@ -84,3 +84,7 @@ What you should learn from this project:
     * Works even if there are existing files of the same name as any of the
     Makefile rules in the current directory.
 
+---
+
+## Author
+* **Henry W. Waswa** - [Henry-Waswa](https://github.com/Henry-Waswa)
